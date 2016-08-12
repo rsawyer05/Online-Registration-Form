@@ -127,13 +127,24 @@
           </div>
           <label class="margin sub-title" for="topics">Other topics you'd like to hear about</label>
           <textarea class="margin" id="topics" name="other_topics" tabindex="14"></textarea>
-          <button class="reset" type="reset" tabindex="15">Reset</button>
-          <button class="submit" type="submit" tabindex="16">Sign Up</button>
+          <div class="how">
+            <label for="how">How did you hear about us?</label>
+            <select id="how" name="how" tabindex="15">
+              <option class="how" value selected hidden>Select item</option>
+              <option value="facebook">Facebook</option>
+              <option value="magazine">Magazine</option>
+              <option value="friend">Friend</option>
+              <option value="internet">Internet Ad</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button class="reset" type="reset" tabindex="16">Reset</button>
+          <button class="submit" type="submit" tabindex="17">Sign Up</button>
         </fieldset>
       </form>
-    </div>  <!-- /container -->
     <footer>
       <p>Copyright The Code Review</p>
     </footer>
+  </div>  <!-- /container -->
   </body>
 </html>

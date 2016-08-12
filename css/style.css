@@ -133,6 +133,9 @@ button {
   color: white;
   font-size: 1.5em;
   background-color: #339966;
+  transition-duration: .5s;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
 }
 
 footer {
@@ -166,8 +169,9 @@ footer {
   height: 70px;
 }
 
-.fieldset1 label {
-  padding: 20px 0 10px;
+.fieldset1 label,
+.how label {
+  padding: 15px 0 10px;
 }
 
 .input-wrapper,
@@ -179,6 +183,10 @@ footer {
   margin-top: 25px;
   cursor: default;
   line-height: 1.5em;
+}
+
+.how {
+  margin-bottom: 20px;
 }
 
 .title {
@@ -318,8 +326,6 @@ input[type="radio"]:checked + label::before {
   text-align: center;
 }
 
-
-
 @media screen and (min-width: 760px) {
   h1 {
     font-size: 1.4em;
@@ -338,7 +344,8 @@ input[type="radio"]:checked + label::before {
     width: 25%;
   }
 
-  .form-field {
+  .form-field,
+  .how {
     margin: 15px 0;
     vertical-align: middle;
   }
@@ -346,6 +353,17 @@ input[type="radio"]:checked + label::before {
   .form-field input,
   .form-field select {
     width: 75%;
+    float: right;
+    height: 50px;
+  }
+
+  .how label {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .how select {
+    width: 65%;
     float: right;
     height: 50px;
   }
@@ -402,10 +420,21 @@ input[type="radio"]:checked + label::before {
     width: 35%;
   }
 
+  textarea {
+    height: 120px;
+  }
+
   footer {
-    width: 1200px;
     border-top: 2px solid #000;
     height: 100px;
+  }
+
+  .how label {
+    width: 40%;
+  }
+
+  .how select {
+    width: 55%;
   }
 
   .form {
